@@ -126,7 +126,17 @@ public class StartView extends ActionBarActivity implements ActionBar.TabListene
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
+
+            switch (position)
+            {
+                case 0:
+                        return ProjectListFragment.newInstance(position);
+                case 1:
+                        return AboutUsFragment.newInstance(position);
+                case 2:
+                         return ContactUsFragment.newInstance(position)
+            }
+
         }
 
         @Override
