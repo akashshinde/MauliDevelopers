@@ -11,6 +11,10 @@ import android.view.ViewGroup;
  */
 public class AboutUsFragment extends Fragment {
 
+
+    public AboutUsFragment() {
+    }
+
     private static final String ARG_SECTION_NUMBER = "section_number";
     public static AboutUsFragment newInstance(int sectionNumber) {
         AboutUsFragment fragment = new AboutUsFragment();
@@ -23,9 +27,8 @@ public class AboutUsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
 
-        View rootView = inflater.inflate(R.layout.fragment_start_view, container, false);
+        View rootView = inflater.inflate(R.layout.about_us, container, false);
         return rootView;
 
     }

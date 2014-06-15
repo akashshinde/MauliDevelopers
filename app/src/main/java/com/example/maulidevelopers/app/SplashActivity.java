@@ -39,12 +39,7 @@ public class SplashActivity extends ActionBarActivity {
                 finish();
             }
         }, SPLASH_TIME_OUT  );
-
-
-
-
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

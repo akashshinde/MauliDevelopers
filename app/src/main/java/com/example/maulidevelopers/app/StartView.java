@@ -1,5 +1,6 @@
 package com.example.maulidevelopers.app;
 
+import java.util.ArrayList;
 import java.util.Locale;
 
 import android.support.v7.app.ActionBarActivity;
@@ -39,6 +40,7 @@ public class StartView extends ActionBarActivity implements ActionBar.TabListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         getSupportActionBar().setTitle("Mauli Developers");
         setContentView(R.layout.activity_start_view);
 
@@ -127,17 +129,18 @@ public class StartView extends ActionBarActivity implements ActionBar.TabListene
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
 
-            switch (position)
-            {
+            switch (position) {
                 case 0:
-                        return ProjectListFragment.newInstance(position);
+                    return ProjectListFragment.newInstance(position);
                 case 1:
-                        return AboutUsFragment.newInstance(position);
+                    return AboutUsFragment.newInstance(position);
                 case 2:
-                         return ContactUsFragment.newInstance(position)
+                    return ContactUsFragment.newInstance(position);
             }
 
+            return null;
         }
+
 
         @Override
         public int getCount() {
@@ -160,40 +163,6 @@ public class StartView extends ActionBarActivity implements ActionBar.TabListene
         }
     }
 
-    /**
-     * A placeholder fragment containing a simple view.
-     */
 
-
-
-    public static class PlaceholderFragment extends Fragment {
-        /**
-         * The fragment argument representing the section number for this
-         * fragment.
-         */
-        private static final String ARG_SECTION_NUMBER = "section_number";
-
-        /**
-         * Returns a new instance of this fragment for the given section
-         * number.
-         */
-        public static PlaceholderFragment newInstance(int sectionNumber) {
-            PlaceholderFragment fragment = new PlaceholderFragment();
-            Bundle args = new Bundle();
-            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-            fragment.setArguments(args);
-            return fragment;
-        }
-
-        public PlaceholderFragment() {
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_start_view, container, false);
-            return rootView;
-        }
-    }
 
 }
