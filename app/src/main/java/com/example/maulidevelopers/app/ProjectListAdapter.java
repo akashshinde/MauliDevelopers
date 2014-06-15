@@ -36,7 +36,7 @@ public class ProjectListAdapter extends ArrayAdapter {
         if (convertView == null)
         {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.list_row,parent,false);
+            convertView = inflater.inflate(R.layout.list_item_card,parent,false);
             TextView textView1 = (TextView) convertView.findViewById(R.id.textView1);
             //TextView textView2 = (TextView) rowView.findViewById(R.id.textView2);
             textView1.setText(list[position]);

@@ -2,11 +2,23 @@
 <pre-dex-items>
 
     <item
+        dex="/Users/Akash/Downloads/MauliDevelopers/silkmaster/build/intermediates/pre-dexed/release/android-support-v13-8034875f08926826c0d22b6d479d5e14711d207e.jar"
+        jar="/Users/Akash/Downloads/MauliDevelopers/silkmaster/libs/android-support-v13.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="f5fa2183e286730a81f3076f19022539902a24f3"/>
+    <item
         dex="/Users/Akash/Downloads/MauliDevelopers/app/build/intermediates/pre-dexed/debug/classes-be41e0798cbcb5ca214a9922b1a9bb6bd7a19d73.jar"
         jar="/Users/Akash/Downloads/MauliDevelopers/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
+    <item
+        dex="/Users/Akash/Downloads/MauliDevelopers/silkmaster/build/intermediates/pre-dexed/release/httpclientandroidlib-1.1.2-d70ae7ae5ad13044b6a63a492bcd3cbace93f2c9.jar"
+        jar="/Users/Akash/Downloads/MauliDevelopers/silkmaster/libs/httpclientandroidlib-1.1.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="0f05dbe836328fa9ac4c2fe506d162705a90901a"/>
     <item
         dex="/Users/Akash/Downloads/MauliDevelopers/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-d8648f9249df09469ae79892050121be0fe60a45.jar"
         jar="/Applications/android-sdk-macosx/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
